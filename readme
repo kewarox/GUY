@@ -1,1 +1,8 @@
 projet campus academy
+Ce depôt reprend le projet de création d'un traducteur pour Campus Academy
+Le projet consiste à créer un formulaire qui sera traduit en diffèrentes langues avec une possibilité d'export PDF
+Le chef de projet est Pierre Wacquez
+La branche master contiens le noyeau central avec du code HTML,Javascript. On à un formulaire simple avec un bouton qui traduit en Français et un export PDF
+Les autres branches sont des extensions à la branche laster, ajout d'un module .NetCore, export excel, connexion API Google Traduction, Python avec Jengo ect...
+
+Merci de créer votre dépôt en parallèle avec Nom et Prenom et d'indiquer dans un readme votre extension au code principal
