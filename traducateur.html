@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="utf8">
+	<style>
+		#blueBar{
+			text-align:right;
+			background-color: #23a6e8;
+		}
+	</style>
+</head>
+<body>
+	<div id="controlPanel">
+		<button id="changeclass">
+			<span class="fr">Changer la langue</span>
+			<span class="en">Change language</span>
+		</button>
+	</div>
+	<div id="leTruc">
+		<div id="title">
+			<h1>
+				<span class="fr">Etat de caisse simplifié</span>
+				<span class="en">Simplified Cash Flow Statement</span>
+			</h1>
+		</div>
+		<div id="blueBar">
+			<div>
+				<span class="fr">Année</span>
+				<span class="en">Year</span>
+			</div>
+		</div>
+		<div id="form">
+			<div>
+				<span class="fr">Recettes d'exploitation</span>
+				<span class="en">Operating receipts</span>
+			</div>
+			<div>
+				<span class="fr">Paiements d'exploitation</span>
+				<span class="en">Operating payments</span>
+			</div>
+			<hr>
+			<div>
+				<b>
+					<span class="fr">Flux de trésorerie d'exploitation</span>
+					<span class="en">Operating Cash Flow</span>
+				</b>
+			</div>
+			<hr>
+			<div>
+				<span class="fr">Dépenses en capital</span>
+				<span class="en">Capital expenditure</span>
+			</div>
+			<div>
+				<span class="fr">Cessions d'immobilisations</span>
+				<span class="en">Fixed asset disposals</span>
+			</div>
+			<hr>
+			<div>
+				<b>
+					<span class="fr">Flux de trésorerie disponible</span>
+					<span class="en">Free Cash Flow before tax</span>
+				</b>
+			</div>
+			<hr>
+			<div>
+				<span class="fr">Charges financières nettes des produits financiers</span>
+				<span class="en">Financial expense net of financial income</span>
+			</div>
+			<div>
+				<span class="fr">Impôt sur les sociétés</span>
+				<span class="en">Corporate income tax</span>
+			</div>
+			<div>
+				<span class="fr">Produit de l'émission d'actions</span>
+				<span class="en">Proceeds from share issue</span>
+			</div>
+			<div>
+				<span class="fr">Dividendes versés</span>
+				<span class="en">Dividends paid</span>
+			</div>
+			<hr>
+			<div>
+				<b>
+					<span class="fr">Diminution nette de la dette</span>
+					<span class="en">Net decrease in debt</span>
+				</b>
+			</div>
+			<hr>
+			<div>
+				<span class="fr">Avec :</span>
+				<span class="en">With:</span>
+			</div>
+			<div>
+				<span class="fr">Remboursements d'emprunts</span>
+				<span class="en">Repayments of borrowings</span>
+			</div>
+			<div>
+				<span class="fr">Nouveaux emprunts bancaires et autres</span>
+				<span class="en">New bank and other borrowings</span>
+			</div>
+			<div>
+				<span class="fr">Variation des valeurs mobilières de placement</span>
+				<span class="en">Change in marketable securities</span>
+			</div>
+			<div>
+				<span class="fr">Variation de la trésorerie et des équivalents de trésorerie</span>
+				<span class="en">Change in cash and cash equivalents</span>
+			</div>
+			<hr>
+			<div>
+				<b>
+					<span class="fr">Diminution nette de la dette</span>
+					<span class="en">Net decrease in debt</span>
+				</b>
+			</div>
+			<hr>
+		</div>
+	</div>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+	<script>
+		var languages = ["fr","en"]; 
+		var currentLang=1;
+		switchLang();
+		document.getElementById("changeclass").onclick=switchLang;
+		
+		function switchLang(){
+			var spans=Array.from(document.getElementsByClassName(languages[currentLang]));
+			spans.forEach(function(span){
+				span.hidden=true;
+			});
+			currentLang++;
+			if(currentLang>=languages.length){
+				currentLang=0;
+			}
+			spans=Array.from(document.getElementsByClassName(languages[currentLang]));
+			spans.forEach(function(span){
+				span.hidden=false;
+			});
+		}
+	</script>
+</body>
