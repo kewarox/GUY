@@ -6,6 +6,9 @@
 			text-align:right;
 			background-color: #23a6e8;
 		}
+		#leTruc{
+			width : 32%;
+		}
 	</style>
 </head>
 <body>
@@ -14,6 +17,7 @@
 			<span class="fr">Changer la langue</span>
 			<span class="en">Change language</span>
 		</button>
+		<button id="toPdf">PDF</button>
 	</div>
 	<div id="leTruc">
 		<div id="title">
@@ -116,17 +120,21 @@
 		</div>
 	</div>
 	
+	<div id="export" hidden></div>
+	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.5.3/jspdf.debug.js" integrity="sha384-NaWTHo/8YCBYJ59830LTz/P4aQZK1sS0SneOgAvhsIl3zBu8r9RevNg5lHCHAuQ/" crossorigin="anonymous"></script>
+	<script src="http://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
 	<script>
 		var languages = ["fr","en"]; 
 		var currentLang=1;
 		switchLang();
 		document.getElementById("changeclass").onclick=switchLang;
+		document.getElementById("toPdf").onclick=toPdf;
 		
 		function switchLang(){
 			var spans=Array.from(document.getElementsByClassName(languages[currentLang]));
 			spans.forEach(function(span){
-				span.hidden=true;
+				span.style.display="block";
 			});
 			currentLang++;
 			if(currentLang>=languages.length){
@@ -134,8 +142,23 @@
 			}
 			spans=Array.from(document.getElementsByClassName(languages[currentLang]));
 			spans.forEach(function(span){
-				span.hidden=false;
+				span.style.display="none";
 			});
+		}
+		
+		function toPdf(){
+			html2canvas(window.document.getElementById("leTruc")).then(function(canvas) {
+				window.document.getElementById("export").innerHTML="";
+				window.document.getElementById("export").appendChild(canvas);
+				
+				var source = window.document.getElementById("export").getElementsByTagName("canvas")[0];
+				var imgData = source.toDataURL(
+                    'image/png');              
+                var doc = new jsPDF('p', 'mm');
+                doc.addImage(imgData, 'PNG', 25, 0);
+                doc.save('sample-file.pdf');
+			});
+			
 		}
 	</script>
 </body>
