@@ -1,0 +1,233 @@
+{
+    "Items": [
+        {
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Etat de caisse simplifié"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Simplified Cash Flow Statement"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Année"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Year"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Recettes d'exploitation"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Operating receipts"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Paiements d'exploitation"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Operating payments"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Flux de trésorerie d'exploitation"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Operating Cash Flow"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Dépenses en capital"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Capital expenditure"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Cessions d'immobilisations"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Fixed asset disposals"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Flux de trésorerie disponible"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Free Cash Flow before tax"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Charges financières nettes des produits financiers"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Financial expense net of financial income"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Impôt sur les sociétés"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Corporate income tax"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Produit de l'émission d'actions"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Proceeds from share issue"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Dividendes versés"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Dividends paid"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Diminution nette de la dette"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Net decrease in debt"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Avec :"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "With:"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Remboursements d'emprunts"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Repayments of borrowings"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Nouveaux emprunts bancaires et autres"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "New bank and other borrowings"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Variation des valeurs mobilières de placement"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Change in marketable securities"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Variation de la trésorerie et des équivalents de trésorerie"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Change in cash and cash equivalents"
+	        	}
+	    	]
+		},
+		{
+	    	"allText": [
+	        	{
+	            	"language": "Français",
+	            	"texte": "Diminution nette de la dette"
+	        	},
+	        	{
+	            	"language": "English",
+	            	"texte": "Net decrease in debt"
+	        	}
+	    	]
+		}
+    ]
+}
+	
